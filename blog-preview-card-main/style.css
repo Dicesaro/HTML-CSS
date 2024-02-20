@@ -1,0 +1,113 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --yellow: hsl(47, 88%, 63%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-weight: 100;
+}
+
+html {
+  background-color: var(--yellow);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  width: 400px;
+  padding: 30px;
+  border: thin solid var(--black);
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 10px 10px var(--black);
+  gap: 35px;
+}
+
+section > .banner {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lear {
+  text-align: center;
+  padding: 5px;
+  width: 100px;
+  font-family: "Figtree";
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: var(--yellow);
+}
+
+article > p {
+  font-family: "Figtree";
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Figtree";
+  font-size: 1.6em;
+  transition: all ease-in-out 0.5s;
+}
+
+h1:hover {
+  color: var(--yellow);
+}
+
+.text {
+  font-family: "Figtree";
+  font-size: 1em;
+  font-weight: 100;
+  color: var(--grey);
+}
+
+.sec-greg {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.sec-greg > img {
+  height: 2em;
+}
+
+.name {
+  font-family: "Figtree";
+}
