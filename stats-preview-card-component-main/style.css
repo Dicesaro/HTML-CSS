@@ -1,0 +1,100 @@
+/* Inter (400 / 700) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Lexend Deca ( 400 )*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --Verydarkblue: hsl(233, 47%, 7%);
+  --Darkdesaturatedblue: hsl(244, 38%, 16%);
+  --Softviolet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightlytransparentwhitemain: hsla(0, 0%, 100%, 0.75);
+  --Slightlytransparenthitestat: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Verydarkblue);
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border: thin solid #000;
+  border-radius: 10px;
+  height: 400px;
+  width: 1000px;
+  background-color: var(--Darkdesaturatedblue);
+}
+
+.cont-1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+  margin: 10px 20px 10px 60px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--White);
+}
+
+.cont-1 > p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: var(--Slightlytransparenthitestat);
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-flow: column;
+  margin-right: 50px;
+}
+
+article > aside > p {
+  font-size: 1.3em;
+  font-family: "Inter";
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--White);
+}
+
+article > aside > span {
+  font-size: 0.8em;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--Slightlytransparenthitestat);
+}
+
+.cont-2 {
+  display: flex;
+}
+
+.staff {
+  height: 400px;
+  border-radius: 0px 10px 10px 0px;
+  filter: hue-rotate(270deg);
+}
