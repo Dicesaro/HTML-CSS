@@ -98,3 +98,63 @@ article > aside > span {
   border-radius: 0px 10px 10px 0px;
   filter: hue-rotate(270deg);
 }
+
+@media (max-width: 30em) {
+  body {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  section {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 25em;
+    height: 95vh;
+  }
+
+  .cont-1 {
+    height: 80vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .cont-1 > p {
+    text-align: center;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: var(--Slightlytransparenthitestat);
+  }
+
+  article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  aside {
+    display: flex;
+    flex-flow: column;
+  }
+
+  article > aside > span {
+    margin-bottom: 30px;
+  }
+
+  .staff {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
