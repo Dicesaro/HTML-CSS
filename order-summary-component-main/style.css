@@ -1,0 +1,138 @@
+/* Red Hat Display  500-700-900*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section {
+  box-shadow: 0px 0px 30px 0.5px var(--Desaturatedblue);
+  background-color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 400px;
+  height: 600px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+article > * {
+  margin-top: 20px;
+}
+
+h1 {
+  color: var(--Darkblue);
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 1.6em;
+}
+
+p {
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 1em;
+  color: var(--Desaturatedblue);
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  height: 5em;
+  width: 320px;
+  background-color: var(--Verypaleblue);
+  border: none;
+  border-radius: 10px;
+}
+
+div > * {
+  font-family: "Red Hat Display";
+}
+
+div > h4 > cite {
+  font-weight: 700;
+  font-size: 0.9em;
+  font-style: initial;
+  color: var(--Desaturatedblue);
+}
+
+a {
+  font-weight: 800;
+}
+
+a:hover {
+  color: #9195f6;
+  text-decoration: none;
+  transition: all ease-in-out 0.5s;
+}
+
+button {
+  color: var(--Verypaleblue);
+  background-color: var(--Brightblue);
+  border: none;
+  border-radius: 10px;
+  font-family: "Red Hat Display";
+  font-size: 1em;
+  font-weight: 700;
+  padding: 15px;
+  width: 320px;
+}
+
+button:hover {
+  background-color: #9195f6;
+  transition: all ease-in-out 0.5s;
+}
+
+h5 {
+  color: var(--Desaturatedblue);
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 1em;
+}
+
+h5:hover {
+  color: var(--Darkblue);
+  transition: all ease-in-out 0.5s;
+}
+
+@media (max-width: 30em) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
