@@ -131,6 +131,7 @@ h1 {
 @media (min-width: 1440px) {
   body {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -138,6 +139,28 @@ h1 {
   }
 
   section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    width: 700px;
+  }
+
+  .cont-1 {
+    max-width: 100%;
+  }
+
+  .cont-2 {
+    width: 310px;
+  }
+
+  .cont-3 {
+    width: 310px;
+  }
+}
+
+/* section {
     display: grid;
     width: 720px;
     height: 55vh;
@@ -164,5 +187,4 @@ h1 {
     grid-row: 3/5;
     padding: 40px;
     border-radius: 0px 0px 5px 0px;
-  }
-}
+  } */
