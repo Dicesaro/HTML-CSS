@@ -145,18 +145,24 @@ h1 {
     align-items: stretch;
     align-content: center;
     min-width: 700px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px var(--Shadow);
   }
 
   .cont-1 {
     max-width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    padding: 30px;
   }
 
   .cont-2 {
     width: 310px;
+    border-radius: 0px 0px 0px 5px;
   }
 
   .cont-3 {
     width: 310px;
+    border-radius: 0px 0px 5px 0px;
   }
 }
 
