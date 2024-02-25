@@ -30,21 +30,21 @@ body {
 section {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   border: thin solid #000;
   border-radius: 10px;
   max-width: 320px;
-  height: 85vh;
+  min-height: 100%;
   background-color: var(--Darkdesaturatedblue);
 }
 
 .cont-texts {
   display: flex;
   flex-flow: column nowrap;
-  gap: 2em;
-  margin: 2em;
+  gap: 20px;
+  margin: 30px;
 }
 
 img {
@@ -61,7 +61,7 @@ h1 {
 }
 
 .text-1 > h1 > span {
-  font-size: 0.99em;
+  font-size: 1em;
   color: var(--Softviolet);
   font-family: "Lexend Deca";
   font-weight: 700;
@@ -70,7 +70,7 @@ h1 {
 .text-2 {
   font-weight: 300;
   font-family: "Lexend Deca";
-  font-size: 1em;
+  font-size: 0.96em;
   color: var(--Slightlytransparenthitestat);
   line-height: 1.6em;
 }
@@ -79,18 +79,63 @@ h1 {
   text-align: center;
 }
 
-.text-3 > p {
-  font-size: 1.5em;
+.text-3 > div > p {
+  font-size: 1.4em;
   font-family: "Lexend Deca";
   font-weight: 400;
   color: var(--White);
-  line-height: 0.9em;
+  line-height: 1em;
 }
 
-.text-3 > span {
+.text-3 > div > span {
   color: var(--Slightlytransparenthitestat);
   text-transform: uppercase;
   font-family: "Lexend Deca";
   font-size: 0.8em;
-  line-height: 4.5em;
+  line-height: 3em;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Verydarkblue);
+  }
+
+  section {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-width: 1000px;
+    height: 400px;
+  }
+
+  section > * {
+    display: flex;
+    text-align: start;
+  }
+
+  img {
+    min-width: 50%;
+    width: auto;
+    border-radius: 0px 10px 10px 0px;
+    object-fit: cover;
+  }
+
+  .cont-texts {
+    display: flex;
+    margin: 60px 75px 60px 60px;
+    gap: 40px;
+  }
+
+  .text-3 {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: start;
+    justify-content: start;
+    gap: 30px;
+  }
 }
