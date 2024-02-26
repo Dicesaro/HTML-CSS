@@ -29,12 +29,12 @@ section {
   box-shadow: 0px 0px 30px 0.5px var(--Desaturatedblue);
   background-color: #fff;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
   border-radius: 20px;
-  max-width: 400px;
-  height: 600px;
+  max-width: 300px;
+  min-height: 500px;
 }
 
 img {
@@ -44,24 +44,24 @@ img {
 
 article {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  gap: 25px;
+  align-items: start;
+  gap: 10px;
 }
 
 h1 {
   color: var(--Darkblue);
   font-family: "Red Hat Display";
   font-weight: 900;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 p {
   text-align: center;
   font-family: "Red Hat Display";
   font-weight: 500;
-  font-size: 1em;
+  font-size: 0.9em;
   color: var(--Desaturatedblue);
 }
 
@@ -70,12 +70,11 @@ div {
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-around;
-
-  height: 5em;
-  width: 320px;
+  height: 80px;
+  width: 250px;
   background-color: var(--Verypaleblue);
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 div > * {
@@ -84,13 +83,14 @@ div > * {
 
 div > h4 > cite {
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-style: initial;
   color: var(--Desaturatedblue);
 }
 
 a {
   font-weight: 800;
+  font-size: 0.8em;
 }
 
 a:hover {
@@ -105,10 +105,10 @@ button {
   border: none;
   border-radius: 10px;
   font-family: "Red Hat Display";
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
   padding: 15px;
-  width: 320px;
+  width: 250px;
 }
 
 button:hover {
@@ -121,6 +121,7 @@ h5 {
   font-family: "Red Hat Display";
   font-weight: 900;
   font-size: 1em;
+  line-height: 40px;
 }
 
 h5:hover {
