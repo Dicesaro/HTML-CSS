@@ -17,12 +17,13 @@
   margin: 0;
   padding: 0;
   font-size: 15px;
+  font-family: "SF Pro Display";
   box-sizing: border-box;
 }
 
 body {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -30,114 +31,109 @@ body {
 
 section {
   display: grid;
-  height: 70vh;
-  min-width: 1500px;
-  grid-template-columns: repeat(12, 100px);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(14, 250px);
+  height: 300vh;
+  min-width: 200px;
+  gap: 10px 0px;
 }
 
 [class^="card"] {
   border-radius: 10px;
-}
-
-.card1 {
-  border: thin solid #ff0000;
-  grid-column: 1/4;
-  grid-row: 1/3;
-}
-
-.card2 {
-  border: thin solid #ff0000;
-  grid-column: 4/7;
-  grid-row: 1/3;
-}
-
-.card3 {
-  border: thin solid #ff0000;
-  grid-column: 7/10;
-  grid-row: 1/3;
-}
-
-.card4 {
-  border: thin solid #ff0000;
-  grid-column: 10/11;
-}
-
-.card5 {
-  border: thin solid #ff0000;
-  grid-column: 11/12;
-}
-
-.card6 {
-  border: thin solid #ff0000;
-  grid-column: 12/13;
-}
-
-.card7 {
-  border: thin solid #ff0000;
-  grid-column: 1/3;
-  grid-row: 3/5;
-}
-
-.card8 {
-  border: thin solid #ff0000;
-  grid-column: 3/5;
-  grid-row: 3/5;
-}
-
-.card9 {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  border: thin solid #ff0000;
-  grid-column: 5/10;
-  grid-row: 3/5;
+  text-align: center;
+  box-shadow: 1px 1px 10px var(--VeryLightGray);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 10px;
+}
+
+.card1 {
+  grid-column: 1/13;
+  grid-row: 3/4;
+}
+
+.card2 {
+  grid-column: 1/13;
+  grid-row: 5/6;
+}
+
+.card3 {
+  grid-column: 1/13;
+  grid-row: 3/4;
+}
+
+.card4 {
+  grid-column: 1/4;
+  grid-row: 9/10;
+}
+
+.card5 {
+  grid-column: 4/7;
+  grid-row: 9/10;
+}
+
+.card6 {
+  grid-column: 7/13;
+  grid-row: 9/10;
+}
+
+.card7 {
+  grid-column: 1/13;
+  grid-row: 6/7;
+}
+
+.card8 {
+  grid-column: 1/13;
+  grid-row: 7/8;
+}
+
+.card9 {
+  grid-column: 1/13;
+  grid-row: 1/2;
+  line-height: 3em;
 }
 
 .card9 > h1 {
+  font-size: 2em;
   font-family: "SF Pro Display";
 }
 
-.card9 > img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .card10 {
-  border: thin solid #ff0000;
-  grid-column: 10/13;
-  grid-row: 2/5;
+  grid-column: 1/13;
+  grid-row: 4/5;
 }
 
 .card11 {
-  border: thin solid #ff0000;
-  grid-column: 1/4;
-  grid-row: 5/7;
+  grid-column: 1/13;
+  grid-row: 8/9;
 }
 
 .card12 {
-  border: thin solid #ff0000;
-  grid-column: 4/8;
-  grid-row: 5/7;
+  grid-column: 1/13;
+  grid-row: 2/3;
 }
 
 .card13 {
-  border: thin solid #ff0000;
-  grid-column: 8/10;
-  grid-row: 5/7;
+  grid-column: 1/13;
+  grid-row: 10/11;
 }
 
 .card14 {
-  border: thin solid #ff0000;
-  grid-column: 10/13;
-  grid-row: 5/7;
+  grid-column: 1/13;
+  grid-row: 11/12;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 1440px) {
   body {
     display: flex;
     flex-flow: row wrap;
@@ -145,10 +141,103 @@ section {
     align-items: center;
     min-height: 100vh;
   }
+
   section {
     display: grid;
-    grid-template-rows: repeat(auto, 100px);
-    height: 300vh;
-    min-width: 200px;
+    justify-content: center;
+    height: 70vh;
+    min-width: 1400px;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+  }
+
+  [class^="card"] {
+    border-radius: 10px;
+  }
+
+  .card1 {
+    grid-column: 1/4;
+    grid-row: 1/3;
+  }
+
+  .card2 {
+    grid-column: 4/7;
+    grid-row: 1/3;
+  }
+
+  .card3 {
+    grid-column: 7/10;
+    grid-row: 1/3;
+  }
+
+  .card4 {
+    grid-column: 10/11;
+    grid-row: 1/2;
+  }
+
+  .card5 {
+    grid-column: 11/12;
+    grid-row: 1/2;
+  }
+
+  .card6 {
+    grid-column: 12/13;
+    grid-row: 1/2;
+  }
+
+  .card7 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+
+  .card8 {
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+
+  .card9 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-column: 5/10;
+    grid-row: 3/5;
+  }
+
+  .card9 > h1 {
+    font-family: "SF Pro Display";
+  }
+
+  .card9 > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card10 {
+    grid-column: 10/13;
+    grid-row: 2/5;
+  }
+
+  .card11 {
+    grid-column: 1/4;
+    grid-row: 5/7;
+  }
+
+  .card12 {
+    grid-column: 4/8;
+    grid-row: 5/7;
+  }
+
+  .card13 {
+    grid-column: 8/10;
+    grid-row: 5/7;
+  }
+
+  .card14 {
+    grid-column: 10/13;
+    grid-row: 5/7;
   }
 }
