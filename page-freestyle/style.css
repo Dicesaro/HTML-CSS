@@ -1,0 +1,148 @@
+/* Fuentes (Obviously - Inter Variable) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@font-face {
+  font-family: "Obviously";
+  src: url(Font-Obviously/Obviously-Regular.otf);
+}
+
+:root {
+  --Blue: #3245ff;
+  --White: #ffffff;
+  --Darkpurple: #1f172f;
+  --Darkgrey: #23262d;
+  --Borderdarkgrey: #35383e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--Darkpurple);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 15px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 150px;
+}
+
+.secc-1 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  font-family: "Obviously";
+  font-size: 2.9em;
+  text-align: center;
+  padding: 0px 20px;
+  color: var(--White);
+  margin-top: 40px;
+}
+
+.secc-1--p {
+  font-family: "Inter";
+  font-size: 1.5em;
+  font-weight: 200;
+  text-align: center;
+  padding: 0px 40px;
+  color: var(--White);
+}
+
+.secc-1--button {
+  font-family: "Inter";
+  font-weight: 500;
+  padding: 0px 40px;
+  height: 50px;
+  width: 90px;
+  border-radius: 50px;
+  border: none;
+  color: var(--Blue);
+}
+
+.secc-1--span {
+  font-family: "Inter";
+  color: #bfc1c9;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.secc-1--cont-logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+/************ Seccion 2  ********************/
+
+.secc-2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.secc-2--h2 {
+  font-family: "Obviously";
+  font-size: 2em;
+  color: var(--White);
+  text-align: center;
+  margin: 0px 32px;
+}
+
+.secc-2--p {
+  font-family: "Inter";
+  color: #bfc1c9;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.secc-2--card {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  background-color: var(--Darkgrey);
+  border: thin solid var(--Borderdarkgrey);
+}
+
+.secc-2--cont-text--card {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.secc-2--h3 {
+  font-family: "Obviously";
+  font-size: 1.5em;
+  color: var(--White);
+}
+
+.secc-2--card--p {
+  font-family: "Inter";
+  margin: 0px 40px 0px 0px;
+  color: #bfc1c9;
+}
