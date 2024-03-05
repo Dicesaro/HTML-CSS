@@ -123,7 +123,7 @@ h1 {
 .secc-2--card {
   display: flex;
   flex-flow: column nowrap;
-  width: 300px;
+  width: 320px;
   background-color: var(--Darkgrey);
   border: thin solid var(--Borderdarkgrey);
 }
