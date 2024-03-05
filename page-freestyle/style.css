@@ -146,3 +146,66 @@ h1 {
   margin: 0px 40px 0px 0px;
   color: #bfc1c9;
 }
+
+/************** Seccion 3 **************/
+.secc-3 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.secc-3--h2 {
+  font-family: "Obviously";
+  font-size: 2em;
+  color: var(--White);
+  text-align: center;
+  margin: 0px 32px;
+}
+
+.secc-3--p {
+  font-family: "Inter";
+  color: #bfc1c9;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.secc-3--card {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  background-color: var(--Darkgrey);
+  border: thin solid var(--Borderdarkgrey);
+  gap: 20px;
+}
+
+.secc-3--div--main {
+  margin: 0px 25px;
+}
+
+.secc-3--label {
+  font-size: 1em;
+  font-family: "Obviously";
+  font-weight: 100;
+  text-align: start;
+  color: var(--White);
+}
+
+.secc-3--div--cont {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 30px;
+  width: 250px;
+  background-color: var(--Darkgrey);
+  border: thin solid var(--White);
+  border-radius: 5px;
+}
+
+.secc-3--div--num {
+  text-align: end;
+  margin: 5px;
+  background-color: aquamarine;
+  width: 220px;
+  border-radius: 1px;
+}
