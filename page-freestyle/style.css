@@ -28,7 +28,11 @@
 }
 
 body {
-  background-color: var(--Darkpurple);
+  background: radial-gradient(
+    circle,
+    rgba(53, 38, 105, 1) 10%,
+    rgba(28, 26, 64, 1) 33%
+  );
 }
 
 img {
