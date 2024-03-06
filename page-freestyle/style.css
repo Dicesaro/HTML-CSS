@@ -194,6 +194,13 @@ h1 {
   gap: 20px;
 }
 
+.secc-3--card--p {
+  font-family: "Inter";
+  color: var(--Grey);
+  text-align: center;
+  padding: 0px 40px;
+}
+
 .secc-3--label:nth-child(2) {
   font-size: 1.5em;
   font-family: "Obviously";
@@ -320,6 +327,14 @@ h1 {
   font-weight: 700;
 }
 
+.secc-4--cont--card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .secc-4--card {
   display: flex;
   flex-flow: row wrap;
@@ -332,7 +347,7 @@ h1 {
   gap: 30px;
 }
 
-.secc-4--card:nth-child(3) {
+.secc-4--card:nth-child(2) {
   background: linear-gradient(
     90deg,
     rgba(60, 68, 254, 1) 0%,
@@ -340,7 +355,7 @@ h1 {
   );
 }
 
-.secc-4--card:nth-child(4) {
+.secc-4--card:nth-child(3) {
   background: linear-gradient(
     90deg,
     rgba(51, 97, 182, 1) 0%,
@@ -348,7 +363,7 @@ h1 {
   );
 }
 
-.secc-4--card:nth-child(5) {
+.secc-4--card:nth-child(4) {
   background: linear-gradient(
     90deg,
     rgba(219, 53, 75, 1) 0%,
@@ -356,7 +371,7 @@ h1 {
   );
 }
 
-.secc-4--card:nth-child(6) {
+.secc-4--card:nth-child(5) {
   background: linear-gradient(
     90deg,
     rgba(219, 53, 75, 1) 0%,
@@ -438,7 +453,7 @@ h1 {
   justify-content: center;
   align-items: center;
   z-index: 99999999;
-  height: 98vh;
+  height: 100vh;
   background-color: var(--Darkfooter);
   gap: 20px;
 }
@@ -514,11 +529,11 @@ h1 {
   justify-content: start;
   align-items: start;
   background-color: var(--Darkfooter);
+  width: 320px;
   gap: 20px;
 }
 
 .footer--nav--p {
-  width: 320px;
   font-family: "Inter";
   color: var(--White);
 }
@@ -526,4 +541,13 @@ h1 {
 .footer--nav--h3 {
   font-family: "Obviously";
   color: var(--Borderdarkgrey);
+}
+
+.footer--nav--icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 40px;
+  gap: 10px;
 }
