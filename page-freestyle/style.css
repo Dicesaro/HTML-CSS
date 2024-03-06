@@ -347,6 +347,13 @@ h1 {
   gap: 30px;
 }
 
+.secc-4--card--h2 {
+  font-family: "Obviously";
+  font-size: 2em;
+  color: var(--White);
+  text-align: center;
+}
+
 .secc-4--card:nth-child(2) {
   background: linear-gradient(
     90deg,
