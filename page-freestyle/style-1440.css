@@ -127,6 +127,8 @@
     width: auto;
   }
   .secc-4--card:nth-child(5) {
+    display: flex;
+    flex-flow: column nowrap;
     grid-column: 1/4;
     width: auto;
   }
