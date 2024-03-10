@@ -1,0 +1,27 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": null,
+    "custom-property-pattern": null,
+    "font-family-name-quotes": "always-unless-keyword",
+    "order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "display",
+      "flex",
+      "width",
+      "height",
+      "margin",
+      "padding",
+      "border",
+      "color",
+      "font",
+      "text-align",
+      "background"
+    ]
+  }
+}

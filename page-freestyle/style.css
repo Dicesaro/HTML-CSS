@@ -1,18 +1,22 @@
-/* Fuentes (Obviously - Inter Variable) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Fuentes (Obviously, Inter ) */
 @font-face {
-  font-family: "Obviously";
-  src: url(Font-Obviously/Obviously-Regular.otf);
+  font-family: "Inter";
+  src: url("Inter/static/Inter-Light.ttf");
 }
 
 @font-face {
-  font-family: "Obviously Bolt";
-  src: url(Font-Obviously/ObviouslyWide-Bold.otf);
+  font-family: "Obviously";
+  src: url("Font-Obviously/Obviously-Regular.otf");
+}
+
+@font-face {
+  font-family: "ObviouslyB";
+  src: url("Font-Obviously/ObviouslyWide-Bold.otf");
 }
 
 :root {
   --Blue: #3245ff;
-  --White: #ffffff;
+  --White: #fff;
   --Grey: #bfc1c9;
   --Darkpurple: #1f172f;
   --Darkgrey: #23262d;
@@ -30,8 +34,8 @@
 body {
   background: radial-gradient(
     circle,
-    rgba(53, 38, 105, 1) 10%,
-    rgba(28, 26, 64, 1) 33%
+    rgb(53 38 105 / 100%) 10%,
+    rgb(28 26 64 / 100%) 33%
   );
 }
 
@@ -55,48 +59,65 @@ main {
   gap: 150px;
 }
 
-.secc-1 {
+.secc- {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  background-image: url("assets/Imgs/bg-grid.png");
   gap: 30px;
 }
 
+.secc-1 {
+  background: radial-gradient(
+    circle,
+    rgb(53 38 105 / 100%) 10%,
+    rgb(28 26 64 / 100%) 33%
+  );
+}
+
 h1 {
-  font-family: "Obviously";
-  font-size: 2.9em;
-  text-align: center;
-  padding: 0px 20px;
+  padding: 0 20px;
   color: var(--White);
+  text-align: center;
+  font-family: "Obviously", sans-serif;
+  font-size: 2.9em;
   margin-top: 40px;
 }
 
-.secc-1--p {
-  font-family: "Inter";
-  font-size: 1.5em;
-  font-weight: 200;
-  text-align: center;
-  padding: 0px 40px;
+.--h2 {
+  margin: 0 32px;
   color: var(--White);
+  text-align: center;
+  font-family: "Obviously", sans-serif;
+  font-size: 2em;
 }
 
-.secc-1--button {
-  font-family: "Inter";
-  font-weight: 500;
-  padding: 0px 40px;
-  height: 50px;
+.secc-1--p {
+  padding: 0 40px;
+  color: var(--White);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.--button {
   width: 90px;
-  border-radius: 50px;
+  height: 50px;
+  padding: 0 40px;
   border: none;
   color: var(--Blue);
+  font-family: "Inter", sans-serif;
+  border-radius: 50px;
+  font-weight: 800;
 }
 
 .secc-1--span {
-  font-family: "Inter";
+  padding: 0 40px;
   color: #bfc1c9;
   text-align: center;
-  padding: 0px 40px;
+  font-family: "Inter", sans-serif;
 }
 
 .secc-1--cont-logos {
@@ -104,31 +125,16 @@ h1 {
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 150px;
+  gap: 20px;
 }
 
 /************ Seccion 2  ********************/
 
-.secc-2 {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.secc-2--h2 {
-  font-family: "Obviously";
-  font-size: 2em;
+.--p {
+  padding: 0 40px;
   color: var(--White);
   text-align: center;
-  margin: 0px 32px;
-}
-
-.secc-2--p {
-  font-family: "Inter";
-  color: #bfc1c9;
-  text-align: center;
-  padding: 0px 40px;
+  font-family: "Inter", sans-serif;
 }
 
 .secc-2--card {
@@ -147,184 +153,98 @@ h1 {
 }
 
 .secc-2--h3 {
-  font-family: "Obviously";
+  font-family: "Obviously", sans-serif;
   font-size: 1.5em;
   color: var(--White);
 }
 
 .secc-2--card--p {
-  font-family: "Inter";
-  margin: 0px 40px 0px 0px;
+  font-family: "Inter", sans-serif;
+  margin: 0 40px 0 0;
   color: #bfc1c9;
 }
 
 /************** Seccion 3 **************/
-.secc-3 {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.secc-3--h2 {
-  font-family: "Obviously";
-  font-size: 2em;
-  color: var(--White);
-  text-align: center;
-  margin: 0px 32px;
-}
-
-.secc-3--p {
-  font-family: "Inter";
-  color: var(--Grey);
-  text-align: center;
-  padding: 0px 40px;
-}
-
 .secc-3--card {
   display: flex;
+  width: 280px;
+  padding: 24px;
+  border: thin solid var(--Borderdarkgrey);
   flex-flow: column wrap;
   justify-content: space-around;
   align-items: start;
-  padding: 24px;
-  width: 280px;
   background-color: var(--Darkgrey);
-  border: thin solid var(--Borderdarkgrey);
   gap: 20px;
 }
 
-.secc-3--card--p {
-  font-family: "Inter";
-  color: var(--Grey);
-  text-align: center;
-  padding: 0px 40px;
-}
-
-.secc-3--label:nth-child(2) {
-  font-size: 1.5em;
-  font-family: "Obviously";
-  font-weight: 100;
-  text-align: start;
+.secc-3--label {
   color: var(--White);
+  font-size: 1.5em;
+  font-family: "Obviously", sans-serif;
+  font-weight: 100;
 }
 
-.secc-3--label:nth-child(4) {
+.--label {
   font-size: 1em;
-  font-family: "Obviously";
-  color: var(--Grey);
-}
-
-.secc-3--label:nth-child(6) {
-  font-size: 1em;
-  font-family: "Obviously";
-  color: var(--Grey);
-}
-
-.secc-3--label:nth-child(8) {
-  font-size: 1em;
-  font-family: "Obviously";
-  color: var(--Grey);
-}
-
-.secc-3--label:nth-child(10) {
-  font-size: 1em;
-  font-family: "Obviously";
+  font-family: "Obviously", sans-serif;
   color: var(--Grey);
 }
 
 .secc-3--div--cont {
   display: flex;
+  width: 270px;
+  height: 40px;
+  border: thin solid var(--White);
   flex-flow: row wrap;
   align-items: center;
-  height: 40px;
-  width: 270px;
   background-color: var(--Darkgrey);
-  border: thin solid var(--White);
   border-radius: 5px;
 }
 
-.secc-3--div--num--98 {
-  font-family: "Obviously";
-  text-align: end;
+.secc-3--div--num {
   width: 98%;
-  padding: 5px;
   margin: 5px;
+  padding: 5px;
+  text-align: end;
   background: linear-gradient(
     90deg,
-    rgba(51, 97, 182, 1) 0%,
-    rgba(68, 207, 195, 1) 100%
+    rgb(51 97 182 / 100%) 0%,
+    rgb(68 207 195 / 100%) 100%
   );
+  font-family: "Obviously", sans-serif;
   border-radius: 1px;
 }
 
-.secc-3--div--num--68 {
-  font-family: "Obviously";
-  text-align: end;
+.--68,
+.--63,
+.--58,
+.--54 {
+  color: var(--White);
+  background: var(--Borderdarkgrey);
+}
+
+.--68 {
   width: 68%;
-  padding: 5px;
-  margin: 5px;
-  color: var(--White);
-  background-color: var(--Borderdarkgrey);
-  border-radius: 1px;
 }
 
-.secc-3--div--num--63 {
-  font-family: "Obviously";
-  text-align: end;
+.--63 {
   width: 63%;
-  padding: 5px;
-  margin: 5px;
-  color: var(--White);
-  background-color: var(--Borderdarkgrey);
-  border-radius: 1px;
 }
 
-.secc-3--div--num--58 {
-  font-family: "Obviously";
-  text-align: end;
+.--58 {
   width: 58%;
-  padding: 5px;
-  margin: 5px;
-  color: var(--White);
-  background-color: var(--Borderdarkgrey);
-  border-radius: 1px;
 }
 
-.secc-3--div--num--54 {
-  font-family: "Obviously";
-  text-align: end;
+.--54 {
   width: 54%;
-  padding: 5px;
-  margin: 5px;
-  color: var(--White);
-  background-color: var(--Borderdarkgrey);
-  border-radius: 1px;
 }
 
 /******************* Seccion 4 ************************/
-
-.secc-4 {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.secc-4--h2 {
-  font-family: "Obviously";
-  font-size: 2em;
-  color: var(--White);
-  text-align: center;
-  margin: 0px 32px;
-}
-
-.secc-4--h2 > .h2--p {
+.h2--p {
   display: inline;
-  font-family: "Obviously Bolt";
+  font-family: "ObviouslyB", sans-serif;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .secc-4--cont--card {
@@ -337,60 +257,46 @@ h1 {
 
 .secc-4--card {
   display: flex;
+  width: 320px;
+  padding: 20px 5px;
+  border: thin solid var(--Borderdarkgrey);
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px 5px;
-  width: 320px;
   background-color: var(--Darkgrey);
-  border: thin solid var(--Borderdarkgrey);
   gap: 30px;
-}
-
-.secc-4--card--h2 {
-  font-family: "Obviously";
-  font-size: 2em;
-  color: var(--White);
-  text-align: center;
 }
 
 .secc-4--card:nth-child(2) {
   background: linear-gradient(
     90deg,
-    rgba(60, 68, 254, 1) 0%,
-    rgba(158, 68, 240, 1) 46%
+    rgb(60 68 254 / 100%) 0%,
+    rgb(158 68 240 / 100%) 46%
   );
 }
 
 .secc-4--card:nth-child(3) {
   background: linear-gradient(
     90deg,
-    rgba(51, 97, 182, 1) 0%,
-    rgba(68, 207, 195, 1) 100%
+    rgb(51 97 182 / 100%) 0%,
+    rgb(68 207 195 / 100%) 100%
   );
 }
 
 .secc-4--card:nth-child(4) {
   background: linear-gradient(
     90deg,
-    rgba(219, 53, 75, 1) 0%,
-    rgba(232, 61, 192, 1) 50%
+    rgb(219 53 75 / 100%) 0%,
+    rgb(232 61 192 / 100%) 50%
   );
 }
 
 .secc-4--card:nth-child(5) {
   background: linear-gradient(
     90deg,
-    rgba(219, 53, 75, 1) 0%,
-    rgba(232, 167, 61, 1) 50%
+    rgb(219 53 75 / 100%) 0%,
+    rgb(232 167 61 / 100%) 50%
   );
-}
-
-.secc-4--p {
-  font-family: "Inter";
-  color: var(--White);
-  padding: 0px 40px;
-  text-align: center;
 }
 
 .secc-4--div--cont {
@@ -404,25 +310,10 @@ h1 {
 }
 
 .secc-4--button {
-  font-family: "Inter";
-  font-weight: 500;
-  padding: 0px 40px;
-  height: 50px;
   width: 120px;
-  border-radius: 50px;
-  border: none;
-  color: var(--Blue);
 }
 
 /****************** Seccion 5 ***********************/
-
-.secc-5 {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
 
 .secc-5--img {
   height: 10vh;
@@ -430,26 +321,25 @@ h1 {
 
 .secc-5--img:nth-child(4) {
   height: 20vh;
+  animation: houston 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes houston {
+  to {
+    transform: translateX(200px);
+  }
+
+  from {
+    transform: translateX(-200px);
+  }
 }
 
 .secc-5--h2 {
-  font-family: "Obviously";
   font-weight: 300;
-  font-size: 1.8em;
-  color: var(--White);
-  text-align: center;
-  margin: 0px 32px;
 }
 
 .secc-5--button {
-  font-family: "Inter";
-  font-weight: 500;
-  padding: 0px 40px;
-  height: 50px;
   width: 100px;
-  border-radius: 50px;
-  border: none;
-  color: var(--Blue);
 }
 
 /****************  Footer  *************************/
@@ -457,53 +347,66 @@ h1 {
 .footer {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  z-index: 99999999;
-  height: 100vh;
+  height: 120vh;
   background-color: var(--Darkfooter);
+  box-shadow: 0 0 100px 20px #204c54;
+}
+
+.footer--div--cols {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+}
+
+.footer--div--col1 {
   gap: 20px;
 }
 
+.footer--div--col1,
+.footer--div--col2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer--h2 {
-  font-family: "Obviously";
-  font-weight: 50;
-  font-size: 1.5em;
-  color: var(--White);
-  padding: 0px 20px 5px;
+  font-size: 1.2em;
 }
 
 .footer--p {
-  font-family: "Inter";
+  padding: 0 20px 5px;
   color: var(--White);
-  padding: 0px 20px 5px;
   text-align: center;
+  font-family: "Inter", sans-serif;
 }
 
 .footer--email {
-  font-family: "Inter";
+  width: 300px;
+  padding: 10px;
+  border: none;
+  color: var(--Grey);
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   background-color: var(--Darkgrey);
-  color: var(--Grey);
   border-radius: 10px;
-  border: none;
-  padding: 10px;
-  width: 300px;
 }
 
 .footer--button {
+  width: 300px;
+  padding: 10px;
+  border: none;
   color: var(--White);
   background: linear-gradient(
     90deg,
-    rgba(60, 68, 254, 1) 0%,
-    rgba(158, 68, 240, 1) 46%
+    rgb(60 68 254 / 100%) 0%,
+    rgb(158 68 240 / 100%) 46%
   );
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   border-radius: 20px;
-  border: none;
-  padding: 10px;
-  width: 300px;
 }
 
 .footer--div--cont {
@@ -521,12 +424,13 @@ h1 {
 }
 
 .footer--div--h3 {
-  font-family: "Obviously";
+  font-family: "Obviously", sans-serif;
   color: var(--Borderdarkgrey);
 }
 
 .footer--div--p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   color: var(--White);
 }
 
@@ -541,12 +445,12 @@ h1 {
 }
 
 .footer--nav--p {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   color: var(--White);
 }
 
 .footer--nav--h3 {
-  font-family: "Obviously";
+  font-family: "Obviously", sans-serif;
   color: var(--Borderdarkgrey);
 }
 
