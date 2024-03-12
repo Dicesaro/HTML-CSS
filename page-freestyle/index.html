@@ -11,10 +11,21 @@
   <body>
     <nav>
       <img src="assets/Logos/logo-astro.svg" alt="" />
-      <img src="assets/boton-hamburgesa.svg" alt="" />
+      <img
+        src="assets/boton-hamburgesa.svg"
+        alt=""
+        id="btnHamburguesa"
+        class="menu-abierto"
+      />
     </nav>
     <hr />
     <main>
+      <div class="modal" id="menuModal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <p>Links del menú...</p>
+        </div>
+      </div>
       <section class="secc-1 secc-">
         <h1>The web framework for content-driven websites</h1>
         <p class="secc-1--p">
@@ -239,5 +250,6 @@
         </div>
       </nav>
     </footer>
+    <script src="./hambu.js"></script>
   </body>
 </html>
